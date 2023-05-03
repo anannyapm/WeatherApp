@@ -6,8 +6,9 @@ import 'package:weather/constants/constant.dart';
 import 'package:weather/model/model.dart';
 
 class WeatherApiCall {
-  Future<dynamic> getData(double lat, double long) async {
-    final userEndPoint = "lat=$lat&lon=$long&appid=$apiKey";
+  Future<dynamic> getData(String city) async {
+  
+    final userEndPoint = "q=$city&appid=$apiKey";
     final url = Uri.parse(baseUrl + userEndPoint);
     debugPrint(url.toString());
 
