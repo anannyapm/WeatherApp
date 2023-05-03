@@ -5,7 +5,7 @@ import 'package:weather/home_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+      const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
   runApp(const MyApp());
 }
 
@@ -18,12 +18,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Weather App',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
         fontFamily: GoogleFonts.poppins().fontFamily,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
-      
     );
   }
 }

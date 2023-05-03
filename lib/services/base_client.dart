@@ -22,7 +22,6 @@ class WeatherApiCall {
       debugPrint(data.locationName); */
       return Weather.fromJson(responseAsMap);
     } else {
-      print("returning null");
       return null;
     }
   }
